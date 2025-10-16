@@ -1,0 +1,144 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Beatriz Requena Oliveira</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      color: #333;
+    }
+
+    header {
+      background: #8e44ad;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      animation: fadeDown 2s ease;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      border-bottom: 3px solid #8e44ad;
+      display: inline-block;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: slideUp 2s forwards;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 2.5s forwards;
+      animation-delay: 1s;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #8e44ad;
+      color: white;
+      margin-top: 40px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background: #8e44ad;
+      color: white;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #732d91;
+    }
+
+    /* Animações */
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Beatriz Requena Oliveira</h1>
+  </header>
+
+  <section>
+    <h2>SOBRE MIM</h2>
+    <p>
+      Sou uma pessoa dedicada e esforçada, que se preocupa muito com o meu futuro. <br>
+      Torço para o time São Paulo e moro em São Paulo. <br>
+      Sou muito sentimental, amo animais e crianças, me preocupo muito com a minha família e amo muito eles. <br>
+      Amo meu namorado e minhas amigas. ❤️ <br><br>
+      Estou fazendo curso de Programação em Python: já completei o primeiro módulo e agora estou na metade do segundo. 🐍💻
+    </p>
+
+    <button onclick="mensagem()">Clique aqui</button>
+  </section>
+
+  <footer>
+    <p>Desenvolvido por Beatriz Requena Oliveira</p>
+  </footer>
+
+  <script>
+    function mensagem() {
+      alert("Obrigada por visitar meu portfólio! 💜 Continue acreditando no seu futuro!");
+    }
+  </script>
+
+</body>
+</html>
